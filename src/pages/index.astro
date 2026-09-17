@@ -7,5 +7,17 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<div class="flex min-h-screen flex-col items-center justify-center bg-slate-900 text-center text-white">
+		<div class="rounded-2xl bg-slate-800 p-8 shadow-2xl border border-slate-700 max-w-md mx-4 animate-fade-in">
+			<h1 class="text-4xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+			Tailwind is Alive! 🚀
+			</h1>
+			<p class="mt-4 text-slate-400 text-lg">
+			Your Astro environment, Proton email identity, and Git version control are perfectly synced.
+			</p>
+			<button class="mt-6 px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 transform hover:scale-[1.03] active:scale-[0.98] shadow-lg shadow-cyan-500/20">
+			Let's Build Something
+			</button>
+		</div>
+	</div>
 </Layout>
