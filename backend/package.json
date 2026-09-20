@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "prisma skills sync || exit 0",
+    "contract:emit": "prisma contract emit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "@prisma/orm-postgres": "^8.0.0-rc.11",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "^0.4.0",
+    "@types/node": "^26.6.2",
+    "nodemon": "^3.1.14",
+    "prisma": "^6.19.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "msgpackr-extract@3.0.4": true,
+    "workerd@1.20260704.1": true
+  }
+}
