@@ -1,0 +1,16 @@
+---
+interface Props {
+  heading: string;
+  subheading?: string;
+  ctaText?: string;
+  ctaHref?: string;
+}
+const { heading, subheading, ctaText, ctaHref } = Astro.props;
+---
+<section class="px-6 py-24 text-center">
+  <h1 class="text-4xl font-bold">{heading}</h1>
+  {subheading && <p class="mt-4 text-lg text-gray-600">{subheading}</p>}
+  {ctaText && ctaHref && (
+    <a href={ctaHref} class="mt-8 inline-block rounded bg-black px-6 py-3 text-white">{ctaText}</a>
+  )}
+</section>
